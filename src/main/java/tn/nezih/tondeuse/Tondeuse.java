@@ -18,6 +18,8 @@ public class Tondeuse {
                             break;
                 case 'G': currentPosition.turnLeft();
                             break;
+                default:
+                    throw new IllegalArgumentException("Instruction invalide: " + instruction);
             }
         }
     }
